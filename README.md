@@ -3,43 +3,66 @@
 Base de connaissance sur les opportunités de revenus passifs et semi-passifs pour Laurent.
 Veille quotidienne automatisée. Commit direct sur `main`.
 
+**Objectif :** 3 000 $/mois pour un maximum de 2h de travail quotidien (ratio cible : 50 $/h).
+
 ---
 
 ## Tableau de bord
 
-- **Objectif** : 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
-- **Revenu mensuel cumulé estimé (fourchette basse)** : 75 $
-- **Progression vers l'objectif** : 2,5%
-- **Temps de maintenance quotidien total estimé** : ~5 min/jour
-- **Nombre d'opportunités documentées** : routines=1, kimsufi=0
+- **Objectif :** 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
+- **Revenu mensuel cumulé estimé (fourchette basse) :** 110 $
+- **Progression vers l'objectif :** 3,7 %
+- **Temps de maintenance quotidien total estimé :** ~40 min/jour (30 min Prolific + 5 min Storj + 5 min Respondent)
+- **Nombre d'opportunités documentées :** routines=2, kimsufi=1
 
 ---
 
 ## Routines
 
-Opportunités ne nécessitant pas de serveur : études rémunérées, partage de données, parrainages, UGC, location d'actifs.
+Opportunités activables sans serveur dédié, intégrables dans une routine quotidienne.
 
-| Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | MAJ |
-|---|---|---|---|---|---|
+| Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | Dernière MAJ |
+|-----|-----------|----------------|------------|-----------|-------------|
 | [Respondent.io](routines/respondent-etudes.md) | low | 75-600 $ | 2-5h | 80-200 $/h | 2026-04-16 |
+| [Prolific - Études Académiques Rémunérées](routines/prolific-etudes-remunereees.md) | low | 30-150 $ | 5-15h | 8-15 $/h | 2026-04-16 |
 
 ---
 
 ## Kimsufi
 
-Opportunités exploitant le serveur dédié OVH Kimsufi (IP fixe, 100 Mbps+, accès root).
+Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, accès root).
 
-| Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | MAJ |
-|---|---|---|---|---|---|
-| (aucune fiche) | | | | | |
+| Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | Dernière MAJ |
+|-----|-----------|----------------|------------|-----------|-------------|
+| [Storj Nœud Stockage](kimsufi/storj-noeud-stockage.md) | low | 5-25 $ | 15 min | 20-100 $/h | 2026-04-16 |
 
 ---
 
 ## À creuser
 
-- **Storj (kimsufi)** : partage de stockage décentralisé sur le Kimsufi, $5-15/mois pour 2-4 TB alloués. Revenus calculés en USD (pas dépendants du cours du token STORJ au-delà de la conversion). À documenter.
-- **Prolific Academic (routines)** : études académiques rémunérées, $8-15/h, minimum garanti par la plateforme. Volume plus élevé que Respondent mais taux horaire plus faible. Complément utile les jours sans étude Respondent.
-- **Lava Network (kimsufi)** : nœuds RPC payants pour 40+ blockchains, 2 milliards de requêtes traitées/jour. Complexité setup élevée, revenus non quantifiés. À vérifier avant de créer une fiche.
-- **Mysterium Network (kimsufi)** : partage de bande passante VPN décentralisé. IP datacenter pénalisée par rapport aux IP résidentielles : revenus à quantifier avant documentation.
-- **Honeygain server-side (kimsufi)** : partage de bande passante côté serveur. Conditions d'utilisation à vérifier : IP datacenter potentiellement exclu des gains.
-- **Respondent + Prolific combinés** : cumuler les deux plateformes permettrait d'approcher 300-900 $/mois pour 4-8h de participation mensuelle totale.
+- **Mysterium Network (kimsufi)** : nœud VPN décentralisé payé en MYST. Les IPs datacenter sont valorisées moins que les IPs résidentielles (ratio 1/3), mais le service tourne 24/7 et la maintenance est nulle. À documenter après vérification des revenus réels sur IP OVH.
+- **Lava Network / Pocket Network (kimsufi)** : nœuds RPC payés pour servir des requêtes blockchain. Nécessite de faire tourner un nœud complet (Ethereum, etc.), ce qui consomme beaucoup de stockage. À évaluer selon l'espace disque disponible sur le Kimsufi.
+- **Honeygain server-side (kimsufi)** : partage de bande passante. À tester si une IP OVH datacenter est acceptée (les IPs datacenter sont souvent bloquées ou limitées à un trafic très faible).
+- **io.net (kimsufi)** : DePIN calcul décentralisé principalement orienté GPU. Vérifier si une configuration CPU-only génère un revenu non nul.
+- **Nodepay (kimsufi/routines)** : réseau de bande passante DePIN. Vérifier compatibilité avec IP datacenter et revenus actuels.
+- **Respondent + Prolific combinés** : cumuler les deux plateformes permettrait d'approcher 105-750 $/mois pour 7-20h de participation mensuelle totale.
+
+---
+
+## Journal quotidien
+
+| Date | Mode | Action | Impact revenu |
+|------|------|--------|--------------|
+| [2026-04-16](daily/2026-04-16.md) | nouvelle-opportunite (x3) | Init repo + fiches Storj, Prolific, Respondent.io | 0 → 110 $/mois |
+
+---
+
+## Structure du repo
+
+```
+passive-income-watch/
+├── README.md              # Ce fichier, tableau de bord principal
+├── routines/              # Fiches opportunités sans serveur dédié
+├── kimsufi/               # Fiches opportunités exploitant le serveur Kimsufi
+└── daily/                 # Logs quotidiens de veille
+```
