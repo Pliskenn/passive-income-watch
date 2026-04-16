@@ -10,10 +10,10 @@ Veille quotidienne automatisée. Commit direct sur `main`.
 ## Tableau de bord
 
 - **Objectif :** 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
-- **Revenu mensuel cumulé estimé (fourchette basse) :** 110 $
-- **Progression vers l'objectif :** 3,7 %
-- **Temps de maintenance quotidien total estimé :** ~40 min/jour (30 min Prolific + 5 min Storj + 5 min Respondent)
-- **Nombre d'opportunités documentées :** routines=2, kimsufi=1
+- **Revenu mensuel cumulé estimé (fourchette basse) :** 120 $
+- **Progression vers l'objectif :** 4 %
+- **Temps de maintenance quotidien total estimé :** ~42 min/jour (30 min Prolific + 10 min Respondent + 1 min Storj + 1 min Akash)
+- **Nombre d'opportunités documentées :** routines=2, kimsufi=2
 
 ---
 
@@ -34,18 +34,21 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | Dernière MAJ |
 |-----|-----------|----------------|------------|-----------|-------------|
+| [Akash Network - Provider Calcul](kimsufi/akash-provider-compute.md) | high | 10-50 $ | 30 min | 20-100 $/h | 2026-04-17 |
 | [Storj Nœud Stockage](kimsufi/storj-noeud-stockage.md) | low | 5-25 $ | 15 min | 20-100 $/h | 2026-04-16 |
 
 ---
 
 ## À creuser
 
-- **Mysterium Network (kimsufi)** : nœud VPN décentralisé payé en MYST. Les IPs datacenter sont valorisées moins que les IPs résidentielles (ratio 1/3), mais le service tourne 24/7 et la maintenance est nulle. À documenter après vérification des revenus réels sur IP OVH.
-- **Lava Network / Pocket Network (kimsufi)** : nœuds RPC payés pour servir des requêtes blockchain. Nécessite de faire tourner un nœud complet (Ethereum, etc.), ce qui consomme beaucoup de stockage. À évaluer selon l'espace disque disponible sur le Kimsufi.
-- **Honeygain server-side (kimsufi)** : partage de bande passante. À tester si une IP OVH datacenter est acceptée (les IPs datacenter sont souvent bloquées ou limitées à un trafic très faible).
+- **Mysterium Network (kimsufi)** : nœud VPN décentralisé payé en MYST. Les IPs datacenter génèrent ~2-5 $/mois (3x moins qu'une IP résidentielle). Revenu absolu faible, mais maintenance nulle. À documenter uniquement si besoin de compléter le portefeuille avec un service set-and-forget additionnel.
+- **Lava Network / Pocket Network (kimsufi)** : nœuds RPC payés pour servir des requêtes blockchain. Nécessite de faire tourner un nœud complet (Ethereum, Cosmos, etc.), très coûteux en stockage. À évaluer selon l'espace disque disponible et les specs du nœud retenu.
+- **Honeygain server-side (kimsufi)** : éliminé. IP datacenter OVH bloquées par ToS Honeygain (confirmé 2026). Ne pas documenter.
+- **EarnApp (kimsufi)** : éliminé. IP datacenter strictement bloquées par ToS. Ne pas documenter.
+- **TraffMonetizer (kimsufi)** : accepte les IPs datacenter, mais revenu 1-5 $/mois sur une IP unique. Contribution marginale. À documenter uniquement en complément d'autres services déjà en place.
 - **io.net (kimsufi)** : DePIN calcul décentralisé principalement orienté GPU. Vérifier si une configuration CPU-only génère un revenu non nul.
-- **Nodepay (kimsufi/routines)** : réseau de bande passante DePIN. Vérifier compatibilité avec IP datacenter et revenus actuels.
-- **Respondent + Prolific combinés** : cumuler les deux plateformes permettrait d'approcher 105-750 $/mois pour 7-20h de participation mensuelle totale.
+- **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN. Le client est une extension navigateur en priorité (peu adapté à un serveur headless). À vérifier si un client serveur natif existe et si les IPs datacenter sont acceptées.
+- **Études médicales / cliniques (routines)** : indemnisations 200-3 500 € par étude en France, plafond légal 6 000 €/an. La plupart nécessitent une présence physique. À creuser pour identifier les études entièrement distancielles (rares mais existantes).
 
 ---
 
@@ -53,6 +56,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
+| [2026-04-17](daily/2026-04-17.md) | nouvelle-opportunite | Fiche Akash Network Provider (kimsufi) | 110 $ → 120 $/mois |
 | [2026-04-16](daily/2026-04-16.md) | nouvelle-opportunite (x3) | Init repo + fiches Storj, Prolific, Respondent.io | 0 → 110 $/mois |
 
 ---
