@@ -10,10 +10,10 @@ Veille quotidienne automatisée. Commit direct sur `main`.
 ## Tableau de bord
 
 - **Objectif :** 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
-- **Revenu mensuel cumulé estimé (fourchette basse) :** 120 $
-- **Progression vers l'objectif :** 4 %
-- **Temps de maintenance quotidien total estimé :** ~42 min/jour (30 min Prolific + 10 min Respondent + 1 min Storj + 1 min Akash)
-- **Nombre d'opportunités documentées :** routines=2, kimsufi=2
+- **Revenu mensuel cumulé estimé (fourchette basse) :** 122 $
+- **Progression vers l'objectif :** 4,1 %
+- **Temps de maintenance quotidien total estimé :** ~42 min/jour (30 min Prolific + 10 min Respondent + 1 min Storj + 1 min Akash + ~0 min Repocket)
+- **Nombre d'opportunités documentées :** routines=2, kimsufi=3
 
 ---
 
@@ -36,19 +36,23 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 |-----|-----------|----------------|------------|-----------|-------------|
 | [Akash Network - Provider Calcul](kimsufi/akash-provider-compute.md) | high | 10-50 $ | 30 min | 20-100 $/h | 2026-04-17 |
 | [Storj Nœud Stockage](kimsufi/storj-noeud-stockage.md) | low | 5-25 $ | 15 min | 20-100 $/h | 2026-04-16 |
+| [Repocket - Partage Bande Passante](kimsufi/repocket-bandwidth.md) | low | 2-6 $ | 5 min | 24-72 $/h | 2026-04-17 |
 
 ---
 
 ## À creuser
 
-- **Mysterium Network (kimsufi)** : nœud VPN décentralisé payé en MYST. Les IPs datacenter génèrent ~2-5 $/mois (3x moins qu'une IP résidentielle). Revenu absolu faible, mais maintenance nulle. À documenter uniquement si besoin de compléter le portefeuille avec un service set-and-forget additionnel.
-- **Lava Network / Pocket Network (kimsufi)** : nœuds RPC payés pour servir des requêtes blockchain. Nécessite de faire tourner un nœud complet (Ethereum, Cosmos, etc.), très coûteux en stockage. À évaluer selon l'espace disque disponible et les specs du nœud retenu.
+- **Earn.FM (kimsufi)** : service de partage de bande passante, datacenter compatible selon pincto.com (avril 2026). Stackable avec Repocket et TraffMonetizer sur le même Kimsufi. À documenter dès confirmation des revenus sur IP OVH (estimation : 1-3 $/mois).
+- **TraffMonetizer (kimsufi)** : accepte les IPs datacenter, 1-5 $/mois sur IP unique, installation Docker. Mentionné dans les notes de la fiche Repocket. À documenter en mini-fiche une fois Repocket en production pour valider l'empilement.
+- **Lava Network (kimsufi)** : fournisseur de nœuds RPC payants, connexion entre développeurs et fournisseurs d'infrastructure blockchain. LAVA à 0,03 $ en avril 2026, market cap 15 M$ (flag « immature » selon le seuil de 10 M$). Nécessite de faire tourner un nœud blockchain complet (NEAR : ~500 Go, Ethereum : ~2 To). Potentiel à réévaluer si le market cap progresse au-delà de 50 M$.
+- **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN, 1,8 M de nœuds, partenaires entreprises dont IDG Capital et Animoca. Roadmap 2025 : client NodeOS Desktop prévu avec support headless. Trafic valorisé en tokens NC non encore convertibles en USD. Compatibilité IP datacenter non confirmée. À réévaluer à la sortie de NodeOS Desktop.
+- **Études médicales / cliniques (routines)** : indemnisations 200-3 500 € par étude en France, plafond légal 6 000 €/an. La plupart exigent une présence physique. Pistes distancielles à creuser : Science.io, plateformes CIC CHU proposant des protocoles cognitifs en ligne.
 - **Honeygain server-side (kimsufi)** : éliminé. IP datacenter OVH bloquées par ToS Honeygain (confirmé 2026). Ne pas documenter.
 - **EarnApp (kimsufi)** : éliminé. IP datacenter strictement bloquées par ToS. Ne pas documenter.
-- **TraffMonetizer (kimsufi)** : accepte les IPs datacenter, mais revenu 1-5 $/mois sur une IP unique. Contribution marginale. À documenter uniquement en complément d'autres services déjà en place.
-- **io.net (kimsufi)** : DePIN calcul décentralisé principalement orienté GPU. Vérifier si une configuration CPU-only génère un revenu non nul.
-- **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN. Le client est une extension navigateur en priorité (peu adapté à un serveur headless). À vérifier si un client serveur natif existe et si les IPs datacenter sont acceptées.
-- **Études médicales / cliniques (routines)** : indemnisations 200-3 500 € par étude en France, plafond légal 6 000 €/an. La plupart nécessitent une présence physique. À creuser pour identifier les études entièrement distancielles (rares mais existantes).
+- **Mysterium Network (kimsufi)** : éliminé. MYST à 0,03 $ en avril 2026 ; un nœud datacenter génère 2-5 MYST/mois = 0,06-0,15 $/mois. Revenu nul en pratique. Ne pas documenter.
+- **io.net (kimsufi)** : éliminé pour configuration CPU-only. La plateforme est exclusivement orientée GPU pour les revenus significatifs. Ne pas documenter pour Kimsufi sans GPU.
+- **Filecoin (kimsufi)** : éliminé. Revenu consistant nécessite >500 TiB de stockage, incompatible avec le Kimsufi.
+- **Render Network (kimsufi)** : éliminé. GPU exclusivement requis pour les nœuds workers.
 
 ---
 
@@ -56,7 +60,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
-| [2026-04-17](daily/2026-04-17.md) | nouvelle-opportunite | Fiche Akash Network Provider (kimsufi) | 110 $ → 120 $/mois |
+| [2026-04-17](daily/2026-04-17.md) | nouvelle-opportunite (x2) | Fiches Akash + Repocket (kimsufi) | 110 $ → 122 $/mois |
 | [2026-04-16](daily/2026-04-16.md) | nouvelle-opportunite (x3) | Init repo + fiches Storj, Prolific, Respondent.io | 0 → 110 $/mois |
 
 ---
