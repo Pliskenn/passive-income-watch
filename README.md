@@ -10,10 +10,10 @@ Veille quotidienne automatisée. Commit direct sur `main`.
 ## Tableau de bord
 
 - **Objectif :** 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
-- **Revenu mensuel cumulé estimé (fourchette basse) :** 173 $
-- **Progression vers l'objectif :** 5,8 %
-- **Temps de maintenance quotidien total estimé :** ~47 min/jour (30 min Prolific + 10 min Respondent + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques)
-- **Nombre d'opportunités documentées :** routines=3, kimsufi=4
+- **Revenu mensuel cumulé estimé (fourchette basse) :** 206 $ (~173 $ existant + ~33 $ parrainages bancaires à 1 filleul/mois)
+- **Progression vers l'objectif :** 6,9 %
+- **Temps de maintenance quotidien total estimé :** ~48 min/jour (30 min Prolific + 10 min Respondent + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques + 1 min parrainages)
+- **Nombre d'opportunités documentées :** routines=4, kimsufi=4
 
 ---
 
@@ -23,6 +23,7 @@ Opportunités activables sans serveur dédié, intégrables dans une routine quo
 
 | Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | Dernière MAJ |
 |-----|-----------|----------------|------------|-----------|-------------|
+| [Parrainages Bancaires Haut Rendement](routines/parrainages-bancaires.md) | low | 30-300 € | 20-30 min | 120-400 €/h | 2026-04-20 |
 | [Respondent.io](routines/respondent-etudes.md) | low | 75-600 $ | 2-5h | 80-200 $/h | 2026-04-16 |
 | [Tests Cosmétiques Cliniques Domicile](routines/tests-cosmetiques-domicile.md) | low | 50-200 €/mois | 3-5h/étude | 15-80 €/h | 2026-04-19 |
 | [Prolific - Études Académiques Rémunérées](routines/prolific-etudes-remunereees.md) | low | 30-150 $ | 5-15h | 8-15 $/h* | 2026-04-16 |
@@ -52,12 +53,18 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 - **Lava Network (kimsufi)** : fournisseur de nœuds RPC payants, connexion entre développeurs et fournisseurs d'infrastructure blockchain. LAVA à 0,03 $ en avril 2026, market cap 15 M$ (flag « immature »). Nécessite de faire tourner un nœud blockchain complet (NEAR : ~500 Go, Ethereum : ~2 To). Potentiel à réévaluer si le market cap progresse au-delà de 50 M$.
 - **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN, 1,8 M de nœuds, partenaires entreprises dont IDG Capital et Animoca. Roadmap 2025 : client NodeOS Desktop prévu avec support headless. Trafic valorisé en tokens NC non encore convertibles en USD. Compatibilité IP datacenter non confirmée. À réévaluer à la sortie de NodeOS Desktop.
 - **Essais pharmaceutiques CIC (routines)** : indemnisations 200-3 500 € par étude en France (Code de la santé publique, plafond 4 500 €/an). Quasi-systématiquement en présentiel (Centre d'Investigation Clinique). Pistes distancielles non confirmées à ce jour. À creuser si protocoles cognitifs ou dermatologiques distanciels se développent.
+- **Page SEO parrainages (kimsufi)** : héberger sur le Kimsufi une page comparative « meilleure banque en ligne France » avec codes parrainages BoursoBank et Fortuneo. Potentiel multiplicateur ×3 sur le revenu parrainages après maturation SEO (3-6 mois). Requiert 3-4h de contenu initial.
 - **Honeygain server-side (kimsufi)** : éliminé. IP datacenter OVH bloquées par ToS Honeygain (confirmé 2026). Ne pas documenter.
 - **EarnApp (kimsufi)** : éliminé. IP datacenter strictement bloquées par ToS. Ne pas documenter.
 - **Mysterium Network (kimsufi)** : éliminé. MYST à 0,03 $ en avril 2026 ; un nœud datacenter génère 2-5 MYST/mois = 0,06-0,15 $/mois. Revenu nul en pratique. Ne pas documenter.
 - **io.net (kimsufi)** : éliminé pour configuration CPU-only. La plateforme est exclusivement orientée GPU pour les revenus significatifs. Ne pas documenter pour Kimsufi sans GPU.
 - **Filecoin (kimsufi)** : éliminé. Revenu consistant nécessite >500 TiB de stockage, incompatible avec le Kimsufi.
 - **Render Network (kimsufi)** : éliminé. GPU exclusivement requis pour les nœuds workers.
+- **Flux Network Cumulus (kimsufi)** : éliminé au prix actuel. Un nœud Cumulus rapporte 30-50 FLUX/mois. Au cours du FLUX en avril 2026 (0,055 $), cela représente 1,65-2,75 $/mois pour ~2h de setup. Ratio < 2 $/h. À réévaluer si le FLUX dépasse 0,20 $.
+- **PacketStream (kimsufi)** : éliminé. Accepte uniquement les IPs résidentielles, pas les IPs datacenter. Confirmé 2026.
+- **Meson Network (kimsufi)** : éliminé. Projet mort : canaux sociaux inactifs depuis 2024, market cap 180 K$ (avril 2026). Ne pas documenter.
+- **Génér8 (routines)** : éliminé. Extension navigateur disponible principalement au Royaume-Uni. Revenus hors UK non fonctionnels ou inférieurs à £5/mois. Ne pas documenter pour la France.
+- **Grass DePIN (kimsufi)** : éliminé. Les IPs datacenter sont déprioritisées par la plateforme, qui valorise uniquement les IPs résidentielles pour le web scraping. Revenu en pratique nul sur IP OVH.
 
 ---
 
@@ -65,6 +72,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
+| [2026-04-20](daily/2026-04-20.md) | nouvelle-opportunite | Fiche parrainages bancaires (BoursoBank + Fortuneo) | 173 $ → 206 $/mois |
 | [2026-04-19](daily/2026-04-19.md) | nouvelle-opportunite (x2) | Fiches tests cosmétiques + Earn.FM | 122 $ → 173 $/mois |
 | [2026-04-17](daily/2026-04-17.md) | nouvelle-opportunite (x2) | Fiches Akash + Repocket (kimsufi) | 110 $ → 122 $/mois |
 | [2026-04-16](daily/2026-04-16.md) | nouvelle-opportunite (x3) | Init repo + fiches Storj, Prolific, Respondent.io | 0 → 110 $/mois |
