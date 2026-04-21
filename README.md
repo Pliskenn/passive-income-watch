@@ -10,10 +10,10 @@ Veille quotidienne automatisée. Commit direct sur `main`.
 ## Tableau de bord
 
 - **Objectif :** 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
-- **Revenu mensuel cumulé estimé (fourchette basse) :** 206 $ (~173 $ existant + ~33 $ parrainages bancaires à 1 filleul/mois)
-- **Progression vers l'objectif :** 6,9 %
-- **Temps de maintenance quotidien total estimé :** ~48 min/jour (30 min Prolific + 10 min Respondent + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques + 1 min parrainages)
-- **Nombre d'opportunités documentées :** routines=4, kimsufi=4
+- **Revenu mensuel cumulé estimé (fourchette basse) :** 231 $ (206 $ existant + 25 $ User Interviews)
+- **Progression vers l'objectif :** 7,7 %
+- **Temps de maintenance quotidien total estimé :** ~52 min/jour (30 min Prolific + 10 min Respondent + 4 min User Interviews + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques + 1 min parrainages)
+- **Nombre d'opportunités documentées :** routines=5, kimsufi=4
 
 ---
 
@@ -25,6 +25,7 @@ Opportunités activables sans serveur dédié, intégrables dans une routine quo
 |-----|-----------|----------------|------------|-----------|-------------|
 | [Parrainages Bancaires Haut Rendement](routines/parrainages-bancaires.md) | low | 30-300 € | 20-30 min | 120-400 €/h | 2026-04-20 |
 | [Respondent.io](routines/respondent-etudes.md) | low | 75-600 $ | 2-5h | 80-200 $/h | 2026-04-16 |
+| [User Interviews - Études UX](routines/user-interviews-etudes.md) | low | 25-300 $ | 2-4h | 50-150 $/h | 2026-04-21 |
 | [Tests Cosmétiques Cliniques Domicile](routines/tests-cosmetiques-domicile.md) | low | 50-200 €/mois | 3-5h/étude | 15-80 €/h | 2026-04-19 |
 | [Prolific - Études Académiques Rémunérées](routines/prolific-etudes-remunereees.md) | low | 30-150 $ | 5-15h | 8-15 $/h* | 2026-04-16 |
 
@@ -49,6 +50,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 ## À creuser
 
+- **DataAnnotation.tech (routines)** : plateforme de training IA (annotation, RLHF, coding tasks). Taux advertised : $25-30/h général, $50-75/h coding, $40/h STEM. Paiement PayPal. Disponibilité en France incertaine : les marchés principaux sont US, Canada, UK, Irlande, NZ, Australie. Une page dédiée « French bilingual » existe (dataannotation.tech/frenchbilingual-en), suggérant un accès pour francophones bilingues. À vérifier directement sur la plateforme : si France confirmée, ratio coding ($50-75/h) dépasse l'objectif de 50 $/h et mérite une fiche dédiée.
 - **TraffMonetizer (kimsufi)** : accepte les IPs datacenter, 1-5 $/mois sur IP unique, installation Docker. Modèle identique à Repocket et Earn.FM. Documenter uniquement si confirmé qu'il ajoute du trafic non capté par les deux autres (scénario peu probable sur une IP unique).
 - **Lava Network (kimsufi)** : fournisseur de nœuds RPC payants, connexion entre développeurs et fournisseurs d'infrastructure blockchain. LAVA à 0,03 $ en avril 2026, market cap 15 M$ (flag « immature »). Nécessite de faire tourner un nœud blockchain complet (NEAR : ~500 Go, Ethereum : ~2 To). Potentiel à réévaluer si le market cap progresse au-delà de 50 M$.
 - **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN, 1,8 M de nœuds, partenaires entreprises dont IDG Capital et Animoca. Roadmap 2025 : client NodeOS Desktop prévu avec support headless. Trafic valorisé en tokens NC non encore convertibles en USD. Compatibilité IP datacenter non confirmée. À réévaluer à la sortie de NodeOS Desktop.
@@ -65,6 +67,9 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 - **Meson Network (kimsufi)** : éliminé. Projet mort : canaux sociaux inactifs depuis 2024, market cap 180 K$ (avril 2026). Ne pas documenter.
 - **Génér8 (routines)** : éliminé. Extension navigateur disponible principalement au Royaume-Uni. Revenus hors UK non fonctionnels ou inférieurs à £5/mois. Ne pas documenter pour la France.
 - **Grass DePIN (kimsufi)** : éliminé. Les IPs datacenter sont déprioritisées par la plateforme, qui valorise uniquement les IPs résidentielles pour le web scraping. Revenu en pratique nul sur IP OVH.
+- **Pocket Network / POKT (kimsufi)** : éliminé. Un nœud nécessite 150 000 POKT stakés = ~1 872 $ au prix d'avril 2026. Dépasse le seuil de 500 € d'investissement. Coûts d'hébergement multi-chain ($200-300/mois) également incompatibles avec un Kimsufi en nœud unique. Ne pas documenter.
+- **Bitping (kimsufi)** : éliminé. Paie en Bitcoin SV (BSV), revenu mesuré à 0,1 cent/jour/nœud = ~0,03 $/mois. Revenu nul en pratique. Ne pas documenter.
+- **Tapestri (routines)** : éliminé. Maximum $25/mois, disponibilité France non confirmée pour 2026. Avis utilisateurs négatifs. Ratio inférieur à 10 $/h. Ne pas documenter.
 
 ---
 
@@ -72,6 +77,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
+| [2026-04-21](daily/2026-04-21.md) | nouvelle-opportunite | Fiche User Interviews (études UX rémunérées, France confirmée) | 206 $ → 231 $/mois |
 | [2026-04-20](daily/2026-04-20.md) | nouvelle-opportunite | Fiche parrainages bancaires (BoursoBank + Fortuneo) | 173 $ → 206 $/mois |
 | [2026-04-19](daily/2026-04-19.md) | nouvelle-opportunite (x2) | Fiches tests cosmétiques + Earn.FM | 122 $ → 173 $/mois |
 | [2026-04-17](daily/2026-04-17.md) | nouvelle-opportunite (x2) | Fiches Akash + Repocket (kimsufi) | 110 $ → 122 $/mois |
