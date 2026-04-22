@@ -10,10 +10,10 @@ Veille quotidienne automatisée. Commit direct sur `main`.
 ## Tableau de bord
 
 - **Objectif :** 3 000 $/mois pour <= 2h/jour (ratio cible 50 $/h)
-- **Revenu mensuel cumulé estimé (fourchette basse) :** 231 $ (206 $ existant + 25 $ User Interviews)
-- **Progression vers l'objectif :** 7,7 %
-- **Temps de maintenance quotidien total estimé :** ~52 min/jour (30 min Prolific + 10 min Respondent + 4 min User Interviews + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques + 1 min parrainages)
-- **Nombre d'opportunités documentées :** routines=5, kimsufi=4
+- **Revenu mensuel cumulé estimé (fourchette basse) :** 253 $ (231 $ existant + 22 $ parking/box nets après impôts, conditionnel à la possession d'un espace)
+- **Progression vers l'objectif :** 8,4 %
+- **Temps de maintenance quotidien total estimé :** ~52 min/jour (30 min Prolific + 10 min Respondent + 4 min User Interviews + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques + 1 min parrainages + ~0 min parking)
+- **Nombre d'opportunités documentées :** routines=6, kimsufi=4
 
 ---
 
@@ -24,12 +24,14 @@ Opportunités activables sans serveur dédié, intégrables dans une routine quo
 | Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | Dernière MAJ |
 |-----|-----------|----------------|------------|-----------|-------------|
 | [Parrainages Bancaires Haut Rendement](routines/parrainages-bancaires.md) | low | 30-300 € | 20-30 min | 120-400 €/h | 2026-04-20 |
+| [Location Parking et Box](routines/location-parking-box.md) | low | 20-100 € nets* | 15 min | 120-400 €/h | 2026-04-22 |
 | [Respondent.io](routines/respondent-etudes.md) | low | 75-600 $ | 2-5h | 80-200 $/h | 2026-04-16 |
 | [User Interviews - Études UX](routines/user-interviews-etudes.md) | low | 25-300 $ | 2-4h | 50-150 $/h | 2026-04-21 |
 | [Tests Cosmétiques Cliniques Domicile](routines/tests-cosmetiques-domicile.md) | low | 50-200 €/mois | 3-5h/étude | 15-80 €/h | 2026-04-19 |
-| [Prolific - Études Académiques Rémunérées](routines/prolific-etudes-remunereees.md) | low | 30-150 $ | 5-15h | 8-15 $/h* | 2026-04-16 |
+| [Prolific - Études Académiques Rémunérées](routines/prolific-etudes-remunereees.md) | low | 30-150 $ | 5-15h | 8-15 $/h** | 2026-04-16 |
 
-*Prolific : ratio sous le seuil de 10 $/h. Documenté comme socle de volume (études fréquentes, peu sélectives) en complément de Respondent.io.
+*Location parking : conditionnel à la possession d'un espace sous-utilisé. Net après commission plateforme (20 %) et impôts (TMI 30 %, micro-foncier).
+**Prolific : ratio sous le seuil de 10 $/h. Documenté comme socle de volume (études fréquentes, peu sélectives) en complément de Respondent.io.
 
 ---
 
@@ -50,12 +52,14 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 ## À creuser
 
-- **DataAnnotation.tech (routines)** : plateforme de training IA (annotation, RLHF, coding tasks). Taux advertised : $25-30/h général, $50-75/h coding, $40/h STEM. Paiement PayPal. Disponibilité en France incertaine : les marchés principaux sont US, Canada, UK, Irlande, NZ, Australie. Une page dédiée « French bilingual » existe (dataannotation.tech/frenchbilingual-en), suggérant un accès pour francophones bilingues. À vérifier directement sur la plateforme : si France confirmée, ratio coding ($50-75/h) dépasse l'objectif de 50 $/h et mérite une fiche dédiée.
+- **Revolut Back / cashback (routines)** : Revolut Metal à 16,99 €/mois, cashback 0,1 % en zone euro et 1 % hors Europe. Marge nette positive uniquement pour des dépenses hors-Europe >1 700 €/mois. Peu pertinent si Laurent dépense principalement en France. À documenter uniquement si dépenses internationales significatives.
 - **TraffMonetizer (kimsufi)** : accepte les IPs datacenter, 1-5 $/mois sur IP unique, installation Docker. Modèle identique à Repocket et Earn.FM. Documenter uniquement si confirmé qu'il ajoute du trafic non capté par les deux autres (scénario peu probable sur une IP unique).
 - **Lava Network (kimsufi)** : fournisseur de nœuds RPC payants, connexion entre développeurs et fournisseurs d'infrastructure blockchain. LAVA à 0,03 $ en avril 2026, market cap 15 M$ (flag « immature »). Nécessite de faire tourner un nœud blockchain complet (NEAR : ~500 Go, Ethereum : ~2 To). Potentiel à réévaluer si le market cap progresse au-delà de 50 M$.
 - **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN, 1,8 M de nœuds, partenaires entreprises dont IDG Capital et Animoca. Roadmap 2025 : client NodeOS Desktop prévu avec support headless. Trafic valorisé en tokens NC non encore convertibles en USD. Compatibilité IP datacenter non confirmée. À réévaluer à la sortie de NodeOS Desktop.
 - **Essais pharmaceutiques CIC (routines)** : indemnisations 200-3 500 € par étude en France (Code de la santé publique, plafond 4 500 €/an). Quasi-systématiquement en présentiel (Centre d'Investigation Clinique). Pistes distancielles non confirmées à ce jour. À creuser si protocoles cognitifs ou dermatologiques distanciels se développent.
 - **Page SEO parrainages (kimsufi)** : héberger sur le Kimsufi une page comparative « meilleure banque en ligne France » avec codes parrainages BoursoBank et Fortuneo. Potentiel multiplicateur ×3 sur le revenu parrainages après maturation SEO (3-6 mois). Requiert 3-4h de contenu initial.
+- **DataAnnotation.tech (routines)** : éliminé. Marchés actifs : US, Canada, UK, Irlande, NZ, Australie uniquement. France hors zone opérationnelle en avril 2026 (confirmé sur la page officielle FAQ). Création de compte possible mais revenus indisponibles. Ne pas documenter tant que la France n'est pas incluse dans la liste des pays actifs.
+- **Clickworker (routines)** : éliminé. Micro-tâches disponibles en France, mais ratio effectif < 5 $/h selon les retours utilisateurs (tâches peu disponibles, temps de sélection non rémunéré, rejets sans explication). Ratio inférieur au seuil de 10 $/h. Ne pas documenter.
 - **Honeygain server-side (kimsufi)** : éliminé. IP datacenter OVH bloquées par ToS Honeygain (confirmé 2026). Ne pas documenter.
 - **EarnApp (kimsufi)** : éliminé. IP datacenter strictement bloquées par ToS. Ne pas documenter.
 - **Mysterium Network (kimsufi)** : éliminé. MYST à 0,03 $ en avril 2026 ; un nœud datacenter génère 2-5 MYST/mois = 0,06-0,15 $/mois. Revenu nul en pratique. Ne pas documenter.
@@ -77,6 +81,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
+| [2026-04-22](daily/2026-04-22.md) | nouvelle-opportunite | Fiche location parking/box (Yespark/Zenpark, revenu passif conditionnel) | 231 $ → 253 $/mois |
 | [2026-04-21](daily/2026-04-21.md) | nouvelle-opportunite | Fiche User Interviews (études UX rémunérées, France confirmée) | 206 $ → 231 $/mois |
 | [2026-04-20](daily/2026-04-20.md) | nouvelle-opportunite | Fiche parrainages bancaires (BoursoBank + Fortuneo) | 173 $ → 206 $/mois |
 | [2026-04-19](daily/2026-04-19.md) | nouvelle-opportunite (x2) | Fiches tests cosmétiques + Earn.FM | 122 $ → 173 $/mois |
