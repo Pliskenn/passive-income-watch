@@ -13,7 +13,7 @@ Veille quotidienne automatisée. Commit direct sur `main`.
 - **Revenu mensuel cumulé estimé (fourchette basse) :** 253 $ (231 $ existant + 22 $ parking/box nets après impôts, conditionnel à la possession d'un espace)
 - **Progression vers l'objectif :** 8,4 %
 - **Temps de maintenance quotidien total estimé :** ~52 min/jour (30 min Prolific + 10 min Respondent + 4 min User Interviews + 1 min Storj + 1 min Akash + ~0 min Repocket + ~0 min Earn.FM + 5 min tests cosmétiques + 1 min parrainages + ~0 min parking)
-- **Nombre d'opportunités documentées :** routines=6, kimsufi=4
+- **Nombre d'opportunités documentées :** routines=6, kimsufi=5
 
 ---
 
@@ -41,12 +41,15 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Nom | Complexité | Revenu mensuel | Temps/mois | Ratio $/h | Dernière MAJ |
 |-----|-----------|----------------|------------|-----------|-------------|
+| [Site Niche Affiliation Finance](kimsufi/niche-affiliation-finance.md) | medium | 0 → 800-2 000 €** | 15-25h setup + 2-4h/mois | 150-1 000 €/h*** | 2026-04-23 |
 | [Akash Network - Provider Calcul](kimsufi/akash-provider-compute.md) | high | 10-50 $ | 30 min | 20-100 $/h | 2026-04-17 |
 | [Storj Nœud Stockage](kimsufi/storj-noeud-stockage.md) | low | 5-25 $ | 15 min | 20-100 $/h | 2026-04-16 |
 | [Earn.FM - Partage Bande Passante](kimsufi/earnfm-bandwidth.md) | low | 1-5 $ | 0 min | >60 $/h* | 2026-04-19 |
 | [Repocket - Partage Bande Passante](kimsufi/repocket-bandwidth.md) | low | 2-6 $ | 5 min | 24-72 $/h | 2026-04-17 |
 
 *Earn.FM : ratio élevé car maintenance = 0. Revenu absolu très faible (1-5 $/mois). Note : Earn.FM et Repocket partagent la même IP, les gains ne sont pas additifs. Voir fiche pour détail du cumul.
+**Site affiliation finance : 0 € les 6 premiers mois, puis 50-200 € (mois 4-6), 400-900 € (mois 7-9), 800-2 000 € (mois 12+). Non comptabilisé dans le revenu cumulé actuel.
+***Ratio calculé en phase stable (mois 12+) sur 2-4h/mois de maintenance. Phase de lancement non rémunérée (investissement 15-25h).
 
 ---
 
@@ -57,7 +60,8 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 - **Lava Network (kimsufi)** : fournisseur de nœuds RPC payants, connexion entre développeurs et fournisseurs d'infrastructure blockchain. LAVA à 0,03 $ en avril 2026, market cap 15 M$ (flag « immature »). Nécessite de faire tourner un nœud blockchain complet (NEAR : ~500 Go, Ethereum : ~2 To). Potentiel à réévaluer si le market cap progresse au-delà de 50 M$.
 - **Nodepay (routines/kimsufi)** : réseau de bande passante DePIN, 1,8 M de nœuds, partenaires entreprises dont IDG Capital et Animoca. Roadmap 2025 : client NodeOS Desktop prévu avec support headless. Trafic valorisé en tokens NC non encore convertibles en USD. Compatibilité IP datacenter non confirmée. À réévaluer à la sortie de NodeOS Desktop.
 - **Essais pharmaceutiques CIC (routines)** : indemnisations 200-3 500 € par étude en France (Code de la santé publique, plafond 4 500 €/an). Quasi-systématiquement en présentiel (Centre d'Investigation Clinique). Pistes distancielles non confirmées à ce jour. À creuser si protocoles cognitifs ou dermatologiques distanciels se développent.
-- **Page SEO parrainages (kimsufi)** : héberger sur le Kimsufi une page comparative « meilleure banque en ligne France » avec codes parrainages BoursoBank et Fortuneo. Potentiel multiplicateur ×3 sur le revenu parrainages après maturation SEO (3-6 mois). Requiert 3-4h de contenu initial.
+- **CrowdGen by Appen (routines)** : plateforme d'annotation IA, héritière d'Appen Connect (lancée 2024), disponible dans 170+ pays. France techniquement éligible. Taux affiché : $14-25/h. Disponibilité réelle des tâches en France non confirmée par des retours terrain en avril 2026. À documenter uniquement si des utilisateurs français confirment un flux régulier de tâches. Chercher sur r/beermoney et le forum officiel.
+- **Parasite SEO affiliation (routines/kimsufi)** : avant de lancer le site de niche Kimsufi, tester le positionnement d'articles comparatifs sur LinkedIn Articles, Medium ou Substack gratuit (autorité de domaine élevée, zéro coût). Premiers résultats en 4-8 semaines. Permet de valider la demande avant d'investir 15-25h sur un domaine propre.
 - **DataAnnotation.tech (routines)** : éliminé. Marchés actifs : US, Canada, UK, Irlande, NZ, Australie uniquement. France hors zone opérationnelle en avril 2026 (confirmé sur la page officielle FAQ). Création de compte possible mais revenus indisponibles. Ne pas documenter tant que la France n'est pas incluse dans la liste des pays actifs.
 - **Clickworker (routines)** : éliminé. Micro-tâches disponibles en France, mais ratio effectif < 5 $/h selon les retours utilisateurs (tâches peu disponibles, temps de sélection non rémunéré, rejets sans explication). Ratio inférieur au seuil de 10 $/h. Ne pas documenter.
 - **Honeygain server-side (kimsufi)** : éliminé. IP datacenter OVH bloquées par ToS Honeygain (confirmé 2026). Ne pas documenter.
@@ -74,6 +78,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 - **Pocket Network / POKT (kimsufi)** : éliminé. Un nœud nécessite 150 000 POKT stakés = ~1 872 $ au prix d'avril 2026. Dépasse le seuil de 500 € d'investissement. Coûts d'hébergement multi-chain ($200-300/mois) également incompatibles avec un Kimsufi en nœud unique. Ne pas documenter.
 - **Bitping (kimsufi)** : éliminé. Paie en Bitcoin SV (BSV), revenu mesuré à 0,1 cent/jour/nœud = ~0,03 $/mois. Revenu nul en pratique. Ne pas documenter.
 - **Tapestri (routines)** : éliminé. Maximum $25/mois, disponibilité France non confirmée pour 2026. Avis utilisateurs négatifs. Ratio inférieur à 10 $/h. Ne pas documenter.
+- **Presearch (kimsufi)** : éliminé. Token PRE à 0,0022 $ en avril 2026, volume de trading 24h de 1 198 $ (quasi-illiquide). Revenu d'un nœud non quantifiable faute de données 2026. Market cap < 5 M$. Ne pas documenter.
 
 ---
 
@@ -81,6 +86,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
+| [2026-04-23](daily/2026-04-23.md) | nouvelle-opportunite | Fiche site niche affiliation finance sur Kimsufi (revenu différé 6+ mois) | 253 $ → 253 $/mois |
 | [2026-04-22](daily/2026-04-22.md) | nouvelle-opportunite | Fiche location parking/box (Yespark/Zenpark, revenu passif conditionnel) | 231 $ → 253 $/mois |
 | [2026-04-21](daily/2026-04-21.md) | nouvelle-opportunite | Fiche User Interviews (études UX rémunérées, France confirmée) | 206 $ → 231 $/mois |
 | [2026-04-20](daily/2026-04-20.md) | nouvelle-opportunite | Fiche parrainages bancaires (BoursoBank + Fortuneo) | 173 $ → 206 $/mois |
