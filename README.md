@@ -43,7 +43,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 |-----|-----------|----------------|------------|-----------|-------------|
 | [Site Niche Affiliation Finance](kimsufi/niche-affiliation-finance.md) | medium | 0 → 800-2 000 €** | 15-25h setup + 2-4h/mois | 150-1 000 €/h*** | 2026-04-23 |
 | [Akash Network - Provider Calcul](kimsufi/akash-provider-compute.md) | high | 10-50 $ | 30 min | 20-100 $/h | 2026-04-17 |
-| [Storj Nœud Stockage](kimsufi/storj-noeud-stockage.md) | low | 5-25 $ | 15 min | 20-100 $/h | 2026-04-16 |
+| [Storj Nœud Stockage](kimsufi/storj-noeud-stockage.md) | low | 5-25 $ | 15 min | 20-100 $/h | 2026-04-24 |
 | [Earn.FM - Partage Bande Passante](kimsufi/earnfm-bandwidth.md) | low | 1-5 $ | 0 min | >60 $/h* | 2026-04-19 |
 | [Repocket - Partage Bande Passante](kimsufi/repocket-bandwidth.md) | low | 2-6 $ | 5 min | 24-72 $/h | 2026-04-17 |
 
@@ -73,6 +73,11 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 - **Flux Network Cumulus (kimsufi)** : éliminé au prix actuel. Un nœud Cumulus rapporte 30-50 FLUX/mois. Au cours du FLUX en avril 2026 (0,055 $), cela représente 1,65-2,75 $/mois pour ~2h de setup. Ratio < 2 $/h. À réévaluer si le FLUX dépasse 0,20 $.
 - **PacketStream (kimsufi)** : éliminé. Accepte uniquement les IPs résidentielles, pas les IPs datacenter. Confirmé 2026.
 - **Meson Network (kimsufi)** : éliminé. Projet mort : canaux sociaux inactifs depuis 2024, market cap 180 K$ (avril 2026). Ne pas documenter.
+- **Sia Network (kimsufi)** : éliminé. SC à ~0,0015-0,0016 $ en avril 2026 (baisse de 43,7 % au T4 2025). Revenu par TB stocké : ~738 SC/To/mois = 1,11 $/To/mois en USD, bien inférieur à Storj. Adoption en déclin (transactions journalières -52,6 % au T2 2025). Les hôtes doivent déposer du SC en collatéral (investissement initial en tokens nécessaire). Délai jusqu'à 12 mois avant que les contrats expirants autofinancent le nœud. Moins rentable et plus complexe que Storj. Ne pas documenter.
+- **Spheron Fizz Node (kimsufi)** : éliminé. SPON à 0,0020 $ en avril 2026 (-97,7 % depuis l'ATH). Prix CPU fixé à 0,75 $/mois par l'opérateur, soit ~0,68 $/mois après commission plateforme (90 %). Revenu CPU absolument négligeable. Staking SPON requis (montant non confirmé). Ne pas documenter.
+- **DeEEP DePIN (kimsufi)** : éliminé. Nécessite du matériel physique dédié (device plug-and-play spécifique à DeEEP, non compatible VPS/serveur dédié classique). Pas une solution software-only. Ne pas documenter pour le Kimsufi.
+- **Hivello DePIN Manager (kimsufi)** : éliminé. L'application DePIN node a été fermée le 30 janvier 2026. La société a pivoté vers le Bitcoin mining fractionné et les RWA GPU/AI. Ne pas documenter.
+- **Tor relay grants (kimsufi)** : éliminé. Le Tor Project ne rémunère pas les opérateurs de relais. Les grants vont à des organisations développant des outils Tor, pas à ceux qui font tourner des relais. Aucun programme de paiement direct pour les opérateurs en 2026. Ne pas documenter.
 - **Génér8 (routines)** : éliminé. Extension navigateur disponible principalement au Royaume-Uni. Revenus hors UK non fonctionnels ou inférieurs à £5/mois. Ne pas documenter pour la France.
 - **Grass DePIN (kimsufi)** : éliminé. Les IPs datacenter sont déprioritisées par la plateforme, qui valorise uniquement les IPs résidentielles pour le web scraping. Revenu en pratique nul sur IP OVH.
 - **Pocket Network / POKT (kimsufi)** : éliminé. Un nœud nécessite 150 000 POKT stakés = ~1 872 $ au prix d'avril 2026. Dépasse le seuil de 500 € d'investissement. Coûts d'hébergement multi-chain ($200-300/mois) également incompatibles avec un Kimsufi en nœud unique. Ne pas documenter.
@@ -86,6 +91,7 @@ Opportunités exploitant le serveur dédié bare-metal OVH (IP fixe, 100 Mbps+, 
 
 | Date | Mode | Action | Impact revenu |
 |------|------|--------|--------------|
+| [2026-04-24](daily/2026-04-24.md) | refresh | Storj : taux inchangés, risque de réduction identifié (thread nov. 2025, 30 000 nœuds) ; 6 nouvelles éliminations (Sia, Spheron, DeEEP, Hivello, Tor relay) | 253 $ → 253 $/mois |
 | [2026-04-23](daily/2026-04-23.md) | nouvelle-opportunite | Fiche site niche affiliation finance sur Kimsufi (revenu différé 6+ mois) | 253 $ → 253 $/mois |
 | [2026-04-22](daily/2026-04-22.md) | nouvelle-opportunite | Fiche location parking/box (Yespark/Zenpark, revenu passif conditionnel) | 231 $ → 253 $/mois |
 | [2026-04-21](daily/2026-04-21.md) | nouvelle-opportunite | Fiche User Interviews (études UX rémunérées, France confirmée) | 206 $ → 231 $/mois |

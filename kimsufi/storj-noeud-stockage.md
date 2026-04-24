@@ -12,7 +12,8 @@ sources:
   - https://forum.storj.io/t/update-to-storj-object-storage-pricing-what-node-operators-need-to-know/30725
   - https://storj.dev/node/faq/held-back-amount
   - https://forum.storj.io/t/what-is-the-new-vetting-time/31226
-last_updated: 2026-04-16
+  - https://forum.storj.io/t/time-to-cut-operator-payments-again/31120
+last_updated: 2026-04-24
 added: 2026-04-16
 ---
 
@@ -41,7 +42,7 @@ Storj est un réseau de stockage décentralisé où les opérateurs de nœuds lo
 
 ## Rendement réaliste
 
-Taux officiels en vigueur (confirmés stables après mise à jour septembre 2025) :
+Taux officiels en vigueur (confirmés stables après mise à jour septembre 2025 ; revérifiés avril 2026, inchangés) :
 
 | Type | Taux opérateur |
 |------|---------------|
@@ -66,7 +67,7 @@ Hypothèse : 2 To alloués sur Kimsufi KS-3 ou équivalent.
 - Egress : 1 To × 20 $/To = 20 $
 - Total : 20-25 $/mois
 
-Les gains dépendent fortement du trafic réseau global Storj, qui fluctue. Le token STORJ est coté en bourse : la valeur en USD peut varier de ±50 % sur 3 mois.
+Les gains dépendent fortement du trafic réseau global Storj, qui fluctue. Le token STORJ est coté en bourse : ~0,10 $ en avril 2026 (source CoinGecko, avril 2026). Les taux de paiement étant exprimés en USD, la valeur en dollars des revenus ne dépend pas directement du cours du STORJ, mais les paiements sont bien reçus en tokens STORJ convertibles.
 
 ## Ratio temps / revenu
 
@@ -85,7 +86,8 @@ Le ratio $/h est élevé car la maintenance est quasi nulle. En revanche, le rev
 
 - **Held amounts** : 75 % des gains retenus les 3 premiers mois, 50 % les mois 4-6, 25 % les mois 7-9. Trésorerie quasi nulle pendant les 9 premiers mois.
 - **Exposition au cours du token STORJ** : paiements en STORJ, pas en USD. Forte volatilité possible.
-- **Faible utilisation réseau** : Storj a un problème chronique de surcapacité côté nœuds. Moins d'entreprises clientes = moins de données à stocker = revenus faibles.
+- **Surcapacité chronique et concurrence accrue** : 30 000 nœuds actifs en novembre 2025 (source : forum communautaire Storj, thread novembre 2025). L'offre de stockage dépasse largement la demande, ce qui maintient les revenus par nœud à des niveaux faibles.
+- **Risque de réduction des taux opérateurs** : un thread communautaire intitulé « Time to cut operator payments again » (novembre 2025) indique que des opérateurs anticipent une réduction des taux. Aucune annonce officielle à ce jour (avril 2026), mais le risque est réel à 6-12 mois.
 - **Risque plateforme** : Storj Labs est une entreprise centrale dans un protocole « décentralisé ». Si Storj Labs ferme ou pivote, les paiements s'arrêtent.
 - **Consommation ressources serveur** : le nœud consomme quelques % de CPU et de RAM en continu. À surveiller si d'autres services tournent sur le Kimsufi.
 - **Port ouvert** : nécessite une exposition réseau supplémentaire. À sécuriser correctement.
@@ -93,10 +95,12 @@ Le ratio $/h est élevé car la maintenance est quasi nulle. En revanche, le rev
 ## Sources
 
 - [Storj Docs - Payout](https://storj.dev/node/payouts) (consulté 2026-04-16)
-- [Forum Storj - Mise à jour tarifs novembre 2025](https://forum.storj.io/t/update-to-storj-object-storage-pricing-what-node-operators-need-to-know/30725) (consulté 2026-04-16)
+- [Forum Storj - Mise à jour tarifs septembre 2025](https://forum.storj.io/t/update-to-storj-object-storage-pricing-what-node-operators-need-to-know/30725) (consulté 2026-04-24)
 - [Storj Docs - Held Back Amount](https://storj.dev/node/faq/held-back-amount) (consulté 2026-04-16)
 - [Forum Storj - Vetting period 2025](https://forum.storj.io/t/what-is-the-new-vetting-time/31226) (consulté 2026-04-16)
+- [Forum Storj - Time to cut operator payments again (nov. 2025)](https://forum.storj.io/t/time-to-cut-operator-payments-again/31120) (consulté 2026-04-24)
+- [CoinGecko - STORJ price](https://www.coingecko.com/en/coins/storj) (consulté 2026-04-24)
 
 ## Notes additionnelles
 
-Combiner Storj avec d'autres services sur le même Kimsufi (Mysterium, autre DePIN) est possible. Surveiller les conflits de ressources (RAM, CPU, bande passante). Storj est compatible Docker et peut tourner en parallèle d'autres conteneurs sans configuration complexe.
+Combiner Storj avec d'autres services sur le même Kimsufi (Earn.FM, Repocket, autre DePIN logiciel) est possible. Surveiller les conflits de ressources (RAM, CPU, bande passante). Storj est compatible Docker et peut tourner en parallèle d'autres conteneurs sans configuration complexe.
